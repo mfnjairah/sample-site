@@ -5,7 +5,7 @@
 }
 
 .header {
-  background-color: rgb(1, 1, 56);
+  background-color: #282e47;
   color: #fff;
   padding: 30px 0;
   text-align: center;
@@ -29,4 +29,10 @@ h2 {
 
 p {
   font-size: 1.5rem;
+}
+
+.date {
+  color: #dc5036;
+  font-weight: bold;
+  font-size: 1.2rem;
 }

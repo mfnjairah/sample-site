@@ -73,7 +73,7 @@ const Home = () => {
               <img src={post.imageLink} alt="Imahe" />
               <h2>{post.newsTitle}</h2>
               <p>{post.newsDetails}</p>
-              <p>{post.date}</p>
+              <p className="date">{post.date}</p>
             </div>
           ))}
         </div>
