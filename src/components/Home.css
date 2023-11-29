@@ -20,19 +20,24 @@ img {
 }
 
 h1 {
-  font-size: 3rem;
-}
-
-h2 {
   font-size: 2rem;
 }
 
-p {
+h2 {
   font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .date {
   color: #dc5036;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.tech-stack {
+  color: #282e47;
+  font-weight: bold;
 }

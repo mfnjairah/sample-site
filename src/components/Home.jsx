@@ -57,12 +57,74 @@ const Home = () => {
     });
   };
 
+  const webProjects = [
+    {
+      projectTitle: "E-commerce Platform",
+      projectDescription:
+        "A fully-featured e-commerce website with user authentication, product catalog, and secure checkout.",
+      imageLink:
+        "https://bootstrapmade.com/content/templatefiles/Impact/Impact-bootstrap-website-template-md.webp",
+      date: "2023-02-10",
+      techStack: ["React", "Node.js", "Express", "MongoDB"],
+    },
+    {
+      projectTitle: "Blog Platform",
+      projectDescription:
+        "A dynamic blog platform with user profiles, post creation, and commenting functionality.",
+      imageLink:
+        "https://themewagon.com/wp-content/uploads/2020/10/aievari.jpg",
+      date: "2023-04-25",
+      techStack: ["Angular", "Firebase", "Node.js", "Express"],
+    },
+    {
+      projectTitle: "Portfolio Website",
+      projectDescription:
+        "A personal portfolio website showcasing skills, projects, and resume.",
+      imageLink:
+        "https://img.freepik.com/premium-psd/charity-web-template_225406-8.jpg",
+      date: "2023-07-15",
+      techStack: ["Vue.js", "Nuxt.js", "Tailwind CSS"],
+    },
+    {
+      projectTitle: "Social Media Dashboard",
+      projectDescription:
+        "A dashboard for managing and analyzing social media accounts, with real-time updates.",
+      imageLink:
+        "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/279244227/original/6df0faed8d9409d01954e3053b7a200c43ae23b0/design-html-template-or-newsletter.jpeg",
+      date: "2023-09-30",
+      techStack: ["React", "Redux", "Node.js", "Socket.io"],
+    },
+    {
+      projectTitle: "Online Learning Platform",
+      projectDescription:
+        "An online learning platform with video lectures, quizzes, and student progress tracking.",
+      imageLink:
+        "https://themeforest.img.customer.envatousercontent.com/files/264747338/01_preview_image.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=01faedf3ef7587d393732299606cbf5e",
+      date: "2023-12-05",
+      techStack: ["Django", "React", "PostgreSQL"],
+    },
+  ];
+
   return (
     <div>
       <section className="header">
         <div className="container">
-          <h1>Kabayan News</h1>
-          <p>Maging aktibo sa mga balita</p>
+          <h1>Jairah Dev Projects</h1>
+          <p>Check my projects and hire me!</p>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          {webProjects.map((project) => (
+            <div className="post">
+              <img src={project.imageLink} alt="walking man" />
+              <h2>{project.projectTitle}</h2>
+              <p>{project.projectDescription}</p>
+              <p className="tech-stack">{project.techStack.join(", ")}</p>
+              <p className="date">{project.date}</p>
+            </div>
+          ))}
         </div>
       </section>
 
